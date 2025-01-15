@@ -6,8 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Probability and Statistics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Odds &#8212; Probability and Statistics</title>
   
   
   
@@ -59,9 +60,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'P5';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Exploratory Data Analysis" href="S1.html" />
+    <link rel="prev" title="Set Complements" href="P4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -112,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -168,12 +171,12 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Probability</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="P1.html">Basic Probability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="P2.html">Compound Events</a></li>
-<li class="toctree-l1"><a class="reference internal" href="P3.html">Independent Events</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="P1.html"><center> Basic Probability</center></a></li>
+<li class="toctree-l1"><a class="reference internal" href="P2.html"><center> Compound Events</center></a></li>
+<li class="toctree-l1"><a class="reference internal" href="P3.html"><center> Independent Events</center></a></li>
 <li class="toctree-l1"><a class="reference internal" href="P4.html"><center> Set Complements</center></a></li>
-<li class="toctree-l1"><a class="reference internal" href="P5.html"><center> Odds</center></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><center> Odds</center></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistics</span></p>
 <ul class="nav bd-sidenav">
@@ -227,6 +230,85 @@
 
 
 
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/StraightDraw/ps/master?urlpath=tree/content/P5.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/P5.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
   title="Fullscreen mode"
@@ -263,7 +345,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1><center> Odds</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -277,13 +359,40 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <section class="tex2jax_ignore mathjax_ignore" id="odds">
+<h1><center> Odds<a class="headerlink" href="#odds" title="Link to this heading">#</a></h1>
+<p>One of the more confusing aspects of Vegas-style betting is that gamblers tend to state probabilities in terms of odds rather than percentages. A weatherman would say “there’s a 70% chance of rain tomorrow.” A gamber would lay 7 to 3 odds for rain tomorrow. A percentage probability is based on the fraction: <span class="math notranslate nohighlight">\(\frac{7}{10}\)</span>. For odds, we give a ratio of “number of successes” to “number of failures.” The <em>order is important: success to failure</em>.</p>
+<p>Poker players know a host of odds. For example, Hero faces odds of roughly 7.5 to 1 against flopping set when starting with a poket pair (pp). The “against” turns the odds around, meaning there is likely to be “1” success for each “7.5” failures. To convert to a probability, we find the denominator by first adding successes and failures. Let <span class="math notranslate nohighlight">\(FS\)</span> be the event of flopping a set given that Hero starts with a pp. Then:</p>
+<div class="math notranslate nohighlight">
+\[P(FS)=\frac{1}{7.5+1}=\frac{1}{8.5}=\frac{2}{17}=\approx0.11765\]</div>
+<p>Suppose Hero holds KK while his opponent holds TT. Hero is about a 4 to 1 favorite. This means that a hand like KK will beat a hand like TT about <span class="math notranslate nohighlight">\(4\)</span> times in <span class="math notranslate nohighlight">\(5\)</span>, or <span class="math notranslate nohighlight">\(80\%\)</span> of the time.</p>
+<p>Poker players tend to estimate both their percentage chance of winning (called equity) and their odds, depending upon the situation. When betting, knowing the odds is more useful since it allows us to match our bet-to-pot ratio and compare it to our successes-to-failure ratio. For example, Hero estimates his chances of winning the pot are 1 in 3, or 2 to 1 against. Villain bets $50 into a $100 pot. Hero must call <span class="math notranslate nohighlight">\(50\)</span> bucks for a chance to win <span class="math notranslate nohighlight">\(150\)</span>. Hero has 2 to 1 odds (against) making his hand, but the pot is “laying” 3 to 1 odds (<span class="math notranslate nohighlight">\(150\)</span> to <span class="math notranslate nohighlight">\(50\)</span>). Hero should call, since the pots odds (his payoff on the bet he is making) are better than his chance of making his hand.</p>
+<p>Poker players tend to use various odds calculators. Suppose in a tournament, two players bet all-in preflop, Hero has QQ, Villain has AQs. Using an online poker calculator, we find that Hero has a 65.725% chance of winning. Rounding a bit, we find that Hero’s odds are 65.8 to 34.2, but we simplify so that the final number is a 1. Dividing both numbers in the ratio by 34.2, we find that <span class="math notranslate nohighlight">\(\frac{65.8}{34.2}=1.9240\)</span>. Gamblers and poker players would say his odds were “slightly worse than 2 to 1,” call it 1.9 to 1, or for simplicity round to 2 to 1.</p>
+<div class="admonition-equity admonition">
+<p class="admonition-title">Equity</p>
+<p><strong>Equity</strong> is the percentage of the pot Hero “deserves” if all cards were known to all players, and is equal to Hero’s percentage chance of winning times the size of the pot.</p>
 </div>
+</section>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -295,6 +404,24 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="P4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><center> Set Complements</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="S1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Exploratory Data Analysis</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

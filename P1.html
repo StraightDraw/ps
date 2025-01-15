@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Probability &#8212; Probability and Statistics</title>
+    <title>Basic Probability &#8212; Probability and Statistics</title>
   
   
   
@@ -170,9 +170,16 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><center> Probability</center></a></li>
-<li class="toctree-l1"><a class="reference internal" href="P2.html"><center> Compound Events</center></a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Probability</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Basic Probability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="P2.html">Compound Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="P3.html">Independent Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="P4.html"><center> Set Complements</center></a></li>
+<li class="toctree-l1"><a class="reference internal" href="P5.html"><center> Odds</center></a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistics</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="S1.html">Exploratory Data Analysis</a></li>
 </ul>
 
@@ -233,7 +240,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/StraightDraw/probstat/master?urlpath=tree/content/P1.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/StraightDraw/ps/master?urlpath=tree/content/P1.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -340,7 +347,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><center> Probability</h1>
+    <h1>Basic Probability</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -350,13 +357,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-probability">BASIC PROBABILITY</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-experiments">Probability Experiments</a></li>
 </ul>
             </nav>
         </div>
@@ -368,28 +369,30 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="probability">
-<h1><center> Probability<a class="headerlink" href="#probability" title="Link to this heading">#</a></h1>
-<p><strong>Robb Sinn, Spring 2005</strong></p>
-<p><strong>Course Notes: MATH 3350</strong></p>
-<p>These course notes provide and introduction to probability and statistics at the introductory level for a mathematics major. Many of the examples in these notes are real poker problems from No Limit Texas Holdem (NLHE) the answers to which intrigue winning players.</p>
-<p>Professional gamblers and poker players actually use mathematics to earn a living. Career paths for professional gamblers include running casinos and betting parlors in places where such things are legal. They offer odds for betting on athletic events and various races. They design and perfect games of chance for the casino floor and verify that the games are fair. Well, some do. Professional poker players are currently the most high profile examples of professional gamblers. Twenty years ago, few people outside Vegas knew of the legendary Doyle Brunson. Today, many poker pros are celebrities.</p>
-<p>What mathematics do they use? With probability theory they predict the future. Statistics help them analyze the past. With an understanding of both, they manufacture hundreds of small edges over their competition to earn money.</p>
-<p>A roulette ball falling into its slot and a card drawn from a well-shuffled deck are two example of probability experiments.</p>
-<section id="basic-probability">
-<h2>BASIC PROBABILITY<a class="headerlink" href="#basic-probability" title="Link to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="basic-probability">
+<h1>Basic Probability<a class="headerlink" href="#basic-probability" title="Link to this heading">#</a></h1>
+<p>These course notes provide and introduction to probability and statistics at the introductory level for a mathematics major. Many of the examples in these notes are real poker problems from No Limit Texas Holdem (NLHE).</p>
+<p>With probability theory mathematicians predict the future. Statistics help mathematicians analyze the past. With an understanding of both areas of mathematics, successful professional poker players manufacture dozens of small edges over their competition to earn money.</p>
+<p>A roulette ball falling into its slot and a card drawn from a well-shuffled deck are two additional examples of probability experiments.</p>
+<section id="probability-experiments">
+<h2>Probability Experiments<a class="headerlink" href="#probability-experiments" title="Link to this heading">#</a></h2>
 <p>A <em>probability experiment</em> is any event whose outcomes are perfectly \textbf{random} and exactly predicted by probabilities. The probability space (or sample space) is the collection of all possible outcomes of the experiment. A simple random sample (SRS) is a collection of outcomes drawn at random from the probability space <span class="math notranslate nohighlight">\(S\)</span>.</p>
 <p>An <em>event</em> is a set of <em>outcomes</em>. We use set notation: an event <span class="math notranslate nohighlight">\(A\)</span> is a subset of <span class="math notranslate nohighlight">\(S\)</span>. Determining probabilities is all about counting the number of outcomes in event <span class="math notranslate nohighlight">\(A\)</span> and in <span class="math notranslate nohighlight">\(S\)</span>. To simplify our work, we will use the \textbf{cardinality} operator <span class="math notranslate nohighlight">\(n(A)\)</span> to indicate “the number of elements (outcomes) in set (event) <span class="math notranslate nohighlight">\(A\)</span>.” This leads us to the main formula in discrete probability theory:</p>
+<aside class="sidebar">
+<p class="sidebar-title">Cardinality</p>
+<p>When we wish to know the number of items in the set <span class="math notranslate nohighlight">\(X\)</span>, we use the cardinality operator <span class="math notranslate nohighlight">\(n(X)\)</span>. We can also use the absolute value to indicate the same calculation: <span class="math notranslate nohighlight">\(|X|\)</span>.</p>
+</aside>
 <div class="math notranslate nohighlight">
 \[
 P(A)=\frac{n(A)}{n(S)}
 \]</div>
-<section id="example-1">
-<h3>Example 1<a class="headerlink" href="#example-1" title="Link to this heading">#</a></h3>
+<p>Let’s practice these ideas.</p>
+<div class="admonition-example-1 admonition">
+<p class="admonition-title">Example 1</p>
 <p>Suppose we draw a single card at random from a well-shuffled standard deck of 52 cards. What is the probability of drawing a <span class="math notranslate nohighlight">\(\heartsuit\)</span>?</p>
-<section id="solution">
-<h4>Solution<a class="headerlink" href="#solution" title="Link to this heading">#</a></h4>
-<p>Let’s define <span class="math notranslate nohighlight">\(H\)</span> to be the event set described by “drawing a heart.” We count the hearts in a standard deck and find the cardinality of the event set to <span class="math notranslate nohighlight">\(|H|=13\)</span>. The sample space <span class="math notranslate nohighlight">\(S\)</span> is the set of all possible cards that could be drawn, so</p>
+</div>
+<p><strong>Solution.</strong>
+Let’s define <span class="math notranslate nohighlight">\(H\)</span> to be the event set described by “drawing a heart.” We count the hearts in a standard deck and find the cardinality of the event set to <span class="math notranslate nohighlight">\(|H|=13\)</span>. The sample space <span class="math notranslate nohighlight">\(S\)</span> is the set of all possible cards that could be drawn, so</p>
 <div class="math notranslate nohighlight">
 \[
 |S|=52
@@ -399,9 +402,10 @@ P(A)=\frac{n(A)}{n(S)}
 \[
 P(H)=\frac{|H|}{|S|}=\frac{13}{52}=\frac{1}{4}
 \]</div>
-<p>While this is a simple example, the solution path is one we will use often in this course: count the outcomes in the event set and divide by the total number of outcomes possible.</p>
-</section>
-</section>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The solution path demonstrated in Example 1 will be of use to us quite often in this course. <strong>Count the outcomes in the event set, and divide by the total number of outcomes possible.</strong></p>
+</div>
 </section>
 </section>
 
@@ -449,7 +453,7 @@ P(H)=\frac{|H|}{|S|}=\frac{13}{52}=\frac{1}{4}
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><center> Compound Events</p>
+        <p class="prev-next-title">Compound Events</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -470,13 +474,7 @@ P(H)=\frac{|H|}{|S|}=\frac{13}{52}=\frac{1}{4}
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-probability">BASIC PROBABILITY</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1">Example 1</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solution">Solution</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-experiments">Probability Experiments</a></li>
 </ul>
   </nav></div>
 
