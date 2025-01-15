@@ -1,6 +1,13 @@
 format: jb-book
 root: Introduction
-chapters:
-- file: P1
-- file: P2
-- file: S1
+parts:
+  - caption: Probability
+    chapters:
+    - file: P1
+    - file: P2
+    - file: P3
+    - file: P4
+    - file: P5
+  - caption: Statistics
+    chapters:
+    - file: S1

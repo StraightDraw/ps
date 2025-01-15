@@ -6,8 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Probability and Statistics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Set Complements &#8212; Probability and Statistics</title>
   
   
   
@@ -59,9 +60,13 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'P4';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Odds" href="P5.html" />
+    <link rel="prev" title="Independent Events" href="P3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -112,8 +117,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -168,11 +171,11 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Probability</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="P1.html">Basic Probability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="P2.html">Compound Events</a></li>
-<li class="toctree-l1"><a class="reference internal" href="P3.html">Independent Events</a></li>
-<li class="toctree-l1"><a class="reference internal" href="P4.html"><center> Set Complements</center></a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="P1.html"><center> Basic Probability</center></a></li>
+<li class="toctree-l1"><a class="reference internal" href="P2.html"><center> Compound Events</center></a></li>
+<li class="toctree-l1"><a class="reference internal" href="P3.html"><center> Independent Events</center></a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><center> Set Complements</center></a></li>
 <li class="toctree-l1"><a class="reference internal" href="P5.html"><center> Odds</center></a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Statistics</span></p>
@@ -227,6 +230,85 @@
 
 
 
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/StraightDraw/ps/master?urlpath=tree/content/P4.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/P4.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
   title="Fullscreen mode"
@@ -263,7 +345,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1><center> Set Complements</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -277,13 +359,46 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <section class="tex2jax_ignore mathjax_ignore" id="set-complements">
+<h1><center> Set Complements<a class="headerlink" href="#set-complements" title="Link to this heading">#</a></h1>
+<p>It is often far easier to count the outcomes in the complement of event <span class="math notranslate nohighlight">\(A\)</span>, e.g. the probability that event A does not occur. We denote the <strong>set complement</strong> as <span class="math notranslate nohighlight">\(\overline A\)</span>. The formula is:</p>
+<div class="math notranslate nohighlight">
+\[
+P(\overline A)=\frac{|\overline A|}{|S|}=\frac{|S|-|A|}{|S|}=1-\frac{|A|}{|S|}=1-P(A)
+\]</div>
+<p>In probability calculations, “throwing away” the overlap between two sets can be useful because it creates disjoint sets. Given two events <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> such that <span class="math notranslate nohighlight">\(A\cap B\neq \emptyset\)</span>, the event “<span class="math notranslate nohighlight">\(A\)</span> but not <span class="math notranslate nohighlight">\(B\)</span>” is given by <span class="math notranslate nohighlight">\(A\cap \overline B\)</span> which we denote as <span class="math notranslate nohighlight">\(A\setminus B\)</span>. Sometimes, we will use standard notation, too, as in $<span class="math notranslate nohighlight">\(A\setminus B= A - B\)</span>$</p>
+<div class="admonition-example-3 admonition">
+<p class="admonition-title">Example 3</p>
+<p>Hero holds 7<span class="math notranslate nohighlight">\(\textcolor{red}{\heartsuit}\)</span> 7<span class="math notranslate nohighlight">\(\textcolor{red}{\diamondsuit}\)</span>. A tight-aggressive Villain open-raises from EP (early position – where players have a very narrow range) and Hero calls on the button. Hero feels he can usually win by bluffing whenever Villain misses the flop, especially on flops like K<span class="math notranslate nohighlight">\(\heartsuit\)</span> 8<span class="math notranslate nohighlight">\(\clubsuit\)</span> 3<span class="math notranslate nohighlight">\(\clubsuit\)</span> with only one big card in them. If Villain has two unpaired cards both of which are nine or better, what is the probability flop with only one big card misses Villain’s hand?</p>
 </div>
+<p>Let <span class="math notranslate nohighlight">\(X={0,1,2,3}\)</span> represent hitting <span class="math notranslate nohighlight">\(x\)</span> cards on the flop. How often does he hit (and miss) the flop? Assuming Hero doesn’t hold any of the cards Villain wants, then there are six cards in the deck that improve Villain’s hand. The probability of Villain getting exactly one of those cards on the flop is:</p>
+<div class="math notranslate nohighlight">
+\[P(X=1)=\frac{\binom{6}{1}\binom{42}{2}}{\binom{48}{3}}\approx.29868\]</div>
+<p>We just used some counting techniques we haven’t discussed, yet. But don’t worry. You’ll know how to do these soon enough. Binomial coefficients like <span class="math notranslate nohighlight">\(\binom{42}{2}\)</span> are read as “forty-two choose two” and count all possible ways we can choose two cards from forty-two cards if order doesn’t matter. Note that Villain could also have two or three of the flop cards hit his hand, and have a monster. These hands are much less likely, but they change the probability somewhat if we include the probability of more than one flop card hitting Villain’s hand:</p>
+<div class="math notranslate nohighlight">
+\[P(X\geq1)=\frac{\binom{6}{1}\binom{42}{2}+\binom{6}{2}\binom{42}{1}+\binom{6}{3}\binom{42}{0}}{\binom{48}{3}}\approx.33597\]</div>
+<p>The upshot is that any poker player hits the flop about <span class="math notranslate nohighlight">\(1/3\)</span> of the time. Of course, hands like <span class="math notranslate nohighlight">\(AA\)</span>, <span class="math notranslate nohighlight">\(KK\)</span> and <span class="math notranslate nohighlight">\(QQ\)</span> don’t need to hit the flop, so we expect a fit-or-fold player to continue on with the hand about 40% of the time. Since Villain will miss the flop for more often than he hits it, our aggressive Hero can use the high likelihood of “unimproved” cards in villain’s hand to bluff on the flop. This happens so often it has a name: a continuation bet, or <strong>cbet</strong>.</p>
+</section>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -295,6 +410,24 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="P3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><center> Independent Events</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="P5.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><center> Odds</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
