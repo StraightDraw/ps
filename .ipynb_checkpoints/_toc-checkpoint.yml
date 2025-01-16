@@ -8,6 +8,11 @@ parts:
     - file: P3
     - file: P4
     - file: P5
+    - file: P6
+    - file: P7
   - caption: Statistics
     chapters:
     - file: S1
+  - caption: Appendix
+    chapters:
+    - file: A1
